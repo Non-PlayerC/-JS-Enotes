@@ -19,11 +19,11 @@
 // }
 
 
-// let n = 10;
-// bugin:
-// for (let i = 2; i < n; i++) {
-//     for (let j = 2; j < i; j++) {
-//         if (i % j == 0) continue bugin
-//     }
-//     console.log(i)
-// }
+let n = 10;
+bugin:// 标签是无法输出的
+for (let i = 2; i < n; i++) {
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) continue bugin
+    }
+    console.log(i)
+}
