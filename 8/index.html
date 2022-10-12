@@ -12,15 +12,12 @@
 
 </body>
 <script>
-    // 判断输入值是否为空
-    let input = prompt("输入数据值 :",);// proimpt 会将字符转换成 string 的类型
-    alert(input ?? "未检测到输出");
-
-
-    // let width = 10;
-    // let height = null;
-
-    // console.log((width ?? 20) * (height ?? 10))
+    let i = 1;
+    let input = prompt("输入一个数字", '');
+    while (i) {
+        (input == 6) ? i = 0 : alert("请继续输入")// == 转换数字比较爱  ===直接比较类型
+    }
+    alert("猜对了")
 </script>
 
 </html>

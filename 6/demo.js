@@ -1,9 +1,12 @@
 // console.log(1 || 0);//1
 
-// console.log(null || 1);//1
-// console.log(null || 0 || 1);//1 返回真值
-// console.log(null && "&& 返回假值");
-// console.log(1 && "&& 返回假值");
+console.log(null || 1);//1
+console.log(null || 0 || 1);//1 返回真值
+console.log(null && "&& 返回假值");// null
+console.log(1 && "&& 返回假值");// 返回假值
+
+console.log(2 || 3);//2   ||直接返回第一个真值
+console.log(2 && 3);//3   &&返回最后一个真值 
 
 // console.log(undefined || null || 0);//0 全为假值时输出最后一个
 // console.log(1 && 2 && 3);// 全为真值时返回最后一个真值
