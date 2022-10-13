@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let name = "name error";
+    // let pass = "pass error";
+    // let input = prompt("输入你的名字,密码: ", '');
+    // (!input == '') ? (name = (input.split(',')[0]), pass = input.split(',')[1]) : alert("错误")
+    // console.log(" name is :" + name, '\n', "pass is :" + pass);
+
+    // function input(data) {
+    //     data = data || "未检测输入"
+    //     alert(data)
+    // }
+    // input()// 未检测输入
+
+    // let data;// 定义了也是 undefined
+    // function input(data) {
+    //     alert("data type " + data)
+    //     alert(data ?? "data error")
+    // }
+    // input()// data error
+    // input(0)// 0   ?? 会检测数据的类型,只对null undefined,0会被检测正常值
+    // input(null)// data error
+    // input(undefined)// data error
+    // input("jack")// jack
+
+
+
+
+
+    // function showMessage(name = "name", pass = error()) {
+    //     alert(name + ": " + pass)
+    // }
+    // function error(data) {
+    //     data ? "passwd" : alert("未检测到输入值")
+    // }
+    // showMessage(name,)
+    // showMessage(name, "保存")
+    function pow(x, n) {
+        let result = x;
+        for (let i = 1; i < n; i++) {
+            result *= x;
+        }
+        alert("result -> " + result)
+    }
+    function sum(x, n) {
+        (x && n) ? pow(x, n) : alert("请输入正确的值");
+    }
+    sum(2, 3);
+</script>
+
+</html>
