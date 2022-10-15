@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let user = {
+    //     name: "jam",
+    //     age: 18
+    // };
+    // let key = prompt("please input your name: ", "name");
+    // alert(user[key])// 可以使用[] 来调用对象中的属性
+
+
+    // let ask = (question, yes, no) => confirm(question) ? yes() : no()
+    // ask(
+    //     "Do you agree?",
+    //     () => alert("You agreed."),
+    //     () => alert("You canceled the execution."),
+    // )
+
+    let user = {};
+    let call = "喜欢带把的女孩子么";
+    let hobby = (question, yes, no) => confirm(question) ? yes() : no()
+    let flag = hobby(
+        call,//类型名会被自动转换成字符串
+        () => 1,
+        () => 0,
+    ) ? user[call] = "男同" : user[call] = "非英雄也";
+    // 当我们使用简单的属性名的时候可以适应点，但是复杂的属性名时更强大的 [] 是更合适的
+    alert(user[call])
+</script>
+
+</html>
