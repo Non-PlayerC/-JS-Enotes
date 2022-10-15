@@ -83,3 +83,12 @@
 
 // ====================================>
 
+let test = {
+    name: "this is test",
+    getdata() {
+        return this
+    },
+}
+
+console.log(test.getdata().name);// this is test
+// 返回了 this 函数中的上下文
