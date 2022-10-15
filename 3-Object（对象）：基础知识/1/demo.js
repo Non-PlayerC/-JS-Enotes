@@ -125,3 +125,19 @@ function multiplyNumeric(menu) {
         // My menu
     }
 }
+
+
+
+let n = 10;
+bugin:// 标签是无法输出的
+for (let i = 2; i < n; i++) {
+    if (i == 4) continue bugin //三目里面用不了 continue
+    console.log(i)
+    // 2
+    // 3
+    // 5
+    // 6
+    // 7
+    // 8
+    // 9
+}
