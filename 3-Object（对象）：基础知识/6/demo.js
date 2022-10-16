@@ -86,9 +86,32 @@
 
 //====> 实现 (a == 1 && a==2 && a==3)
 
-let a = { value: 0 };
-a.toString = function () {
-    return this.value += 1;
+// let a = { value: 0 };
+// a.toString = function () {
+//     return this.value += 1;
+// }
+
+// console.log(a == 1 && a == 2 && a == 3);
+
+
+
+
+// ==============>
+
+let user1 = {
+    name: "user1",
+    sai() {
+        console.log("hello user1");
+    }
 }
 
-console.log(a == 1 && a == 2 && a == 3);
+function user2() {
+    this.name = "user2";
+    this.sai = function () {
+        console.log("hello user2")
+    }
+}
+
+user1.sai();
+let user3 = new user2();
+user3.sai();
