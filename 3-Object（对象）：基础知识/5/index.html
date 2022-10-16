@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<script>
+    "use strict";
+
+    // function User() {
+    //     alert(new.target);// target 的调用相当于该函数
+    // }
+
+    // // 不带 "new"：
+    // User(); // undefined
+
+    // // 带 "new"：
+    // new User(); // function User { ... }
+    // function Calculator() {
+    //     this.result = 0;
+    //     this.read = function () {
+    //         this.x = +prompt("请输入 x", 0)
+    //         this.y = +prompt("请输入 y", 0)
+    //         return this
+    //     }
+
+    //     // this.data = "user: json" //==> user: json
+
+    //     // this.sum = "这是个函数";
+    //     // ==>
+    //     // function () {
+    //     //     this.result = this.x + this.y
+    //     //     return this
+    //     // }
+
+    //     this.sum = function () {
+    //         this.result = this.x + this.y
+    //         return this
+    //     }
+    //     this.division = function () {
+    //         this.result = this.result / 2
+    //         return this
+    //     }
+    //     this.mul = function () {
+    //         this.result *= this.result
+    //         return this
+    //     }
+    //     this.show = function () {
+    //         alert("最后运算的结果是 :" + this.result)
+    //     }
+    // }
+
+    // let calculator = new Calculator();
+    // calculator.read().sum().mul().division().show();
+
+
+
+    // ====================>
+    let accumulator = new Accumulator(1); // 初始值 1
+
+    accumulator.read(); // 添加用户输入的 value
+    accumulator.read(); // 添加用户输入的 value
+
+    alert(accumulator.result); // 显示这些值的总和
+
+    function Accumulator(input) {
+        this.result = input;
+        this.read = function () {
+            this.result += +prompt("输入相加的数字: ", 0)
+        }
+    }
+
+
+
+</script>
