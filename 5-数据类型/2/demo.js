@@ -79,3 +79,15 @@ extractCurrencyValue('$120') === 120; // true
 function extractCurrencyValue(str) {
     console.log(str.slice(1))
 }
+
+
+
+console.log(`
+    真
+    的
+    可
+    以
+    直
+    接
+    瑟瑟瑟瑟瑟瑟
+`);
