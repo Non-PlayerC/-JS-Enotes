@@ -11,3 +11,6 @@ for (let i = 2; i < n; i++) {
     }
     console.log(i)
 }
+
+
+// 函数的构造
