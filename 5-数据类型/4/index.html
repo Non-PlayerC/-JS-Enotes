@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+    "use strict";
+
+    let arr = [1, 2];
+
+    let arrayLike = {
+        1: "something",
+        0: "else",// 根据 key 进行排序插入
+        2: "200",
+        4: "11.1",
+        length: 10,// 对象的长度
+        [Symbol.isConcatSpreadable]: true,
+    };
+
+    alert(arr.concat(arrayLike)); // 1,2,something,else,200,,11.1,,,,,
+</script>
